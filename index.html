@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <nav>
+                <div class="identidad-colegio">
+    <img src="download.png"
+         alt="Escudo de la I.E. Colombia"
+         class="escudo">
+    <div class="logo">I.E. COLOMBIA</div>
+    <script>
+const encabezado = document.querySelector("header");
+let ultimaPosicion = window.scrollY;
+
+window.addEventListener("scroll", function () {
+    const posicionActual = window.scrollY;
+
+    if (posicionActual < 80) {
+        encabezado.classList.remove("header-oculto");
+    } else if (posicionActual > ultimaPosicion + 5) {
+        encabezado.classList.add("header-oculto");
+    } else if (posicionActual < ultimaPosicion - 5) {
+        encabezado.classList.remove("header-oculto");
+    }
+
+    ultimaPosicion = posicionActual;
+});
+</script>
+</div>
+                <ul class="nav-links">
+                    <li><a href="#mision">MISION</a></li>
+                     <li><a href="#vision">VISIÓN</a></li>
+                      <li><a href="#ubicacion">UBICACION</a></li>
+                       <li><a href="#quesomos">¿QUE SOMOS?</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+
+        <!-- ===== mision  ===== -->
+        <section id="mision">
+            <h1>MISIÓN</h1>
+            <P>Ofrecer una educación integral, sin discriminación, que promueva la responsabilidad, 
+                el crecimiento en valores éticos y morales, el aprendizaje significativo y la capacidad
+                 para resolver problemas.</P>
+                  <img src="images (1).jpg" alt="Imagen de la misión" class="imagen-vision">
+        
+        </section>
+       
+
+
+        <!-- ===== vision ===== -->
+        <section id="vision">
+            <h2>VISIÓN</h2>
+            <p>El texto publicado proyectaba que, para 2016, la institución estaría a la vanguardia de la educación regional,
+                 departamental, nacional e internacional, y que su comunidad estaría satisfecha con su labor y comprometida con mejorar la calidad de vida.</p>
+                 <img src="images (2).jpg" alt="Imagen de la visión" class="imagen-vision">
+        </section>
+      
+
+        <!-- ===== ubicacion ===== -->
+       <section id="ubicacion">
+    <h2>UBICACIÓN</h2>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1678.2344139972192!2d-76.655298581529!3d7.758574147090487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e50101ab74d51e5%3A0x6cb3a56f0d8f5947!2sInstituci%C3%B3n%20Educativa%20Colombia!5e0!3m2!1ses-419!2sco!4v1792031265497!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>"
+      
+    </iframe>
+</section>
+    </iframe>
+</section>
+
+    </main>
+    <footer>
+        <p>I.E COLOMBIA</p>
+    </footer>
+</body>
+</html> 
